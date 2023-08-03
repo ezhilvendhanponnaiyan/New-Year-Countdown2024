@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown AI</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><span>2023</span> <br />Countdown for New year 2024</h1>
+      <div id="timer"></div>
+    </div>
+
+    <!--  -->
+
+    <!--  simple javascript project  -->
+
+    <!--jQuery CDN add  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- final countdown js j-Query -->
+    <script src="./countdown.js"></script>
+
+    <script type="text/javascript">
+      $('#timer').countdown('2023/12/10', function (event) {
+        $(this).html(
+          event.strftime(
+            '<div>%W Weeks </div>' +
+              '<div>%D Days </div>' +
+              '<div>%H Hours</div>' +
+              '<div> %M Min</div>' +
+              '<div> %S Sec.</div>'
+          )
+        );
+      });
+    </script>
+    <h2 class="creat">Created by EZHILDHONI</h2>
+  </body>
+</html>

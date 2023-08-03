@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(./Dark\ Modern\ Photo\ Mountain\ And\ Sky\ Desktop\ Wallpaper.png);
+  color: white;
+}
+
+.container {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50);
+  text-align: center;
+  width: 100%;
+}
+h1 {
+  font-size: 3rem;
+}
+h1 span {
+  font-size: 3.5rem;
+}
+
+#timer {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#timer div {
+  position: relative;
+  width: 120px;
+  padding: 20px;
+  margin: 0.5px;
+  font-size: 1.5rem;
+  background: white;
+  color: black;
+}
+
+#timer div:last-child {
+  background: #e91e63;
+  color: white;
+}
+
+.creat{
+text-align: center;
+margin: 5rem;
+font-size: 2rem;
+color: aquamarine;
+
+}
